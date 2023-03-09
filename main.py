@@ -1,7 +1,7 @@
-#m = int(input("Enter m = "))
-#n = int(input("Enter n = "))
+# m = int(input("Enter m = "))
+# n = int(input("Enter n = "))
 
-#print("Результат: " , (m//n)+1)
+# print("Результат: " , (m//n)+1)
 
 #a = int(input("Enter a class pupils quantity = "))
 #b = int(input("Enter b class pupils quantity = "))
@@ -60,4 +60,15 @@
 # k = int(input('Введитете значение количества долек: '))
 # if (k%n == 0 or k%m == 0):
 #     print('Результат - Да')
-# else: print('Результат - Нет')    
+# else: print('Результат - Нет')
+
+# a=5
+# b=10
+# c=20
+# print("{}-{}-{}".format(a,b,c))
+
+# print("Введите первое число: ")
+# a = input()
+# b = input("Введите второе число: ")
+
+# print(a, "+" , b, "=", a+b)
