@@ -1,12 +1,12 @@
-# m = int(input("Enter m = "))
 # n = int(input("Enter n = "))
+# m = int(input("Enter m = "))
 
 # print("Результат: " , (m//n)+1)
 
-#a = int(input("Enter a class pupils quantity = "))
-#b = int(input("Enter b class pupils quantity = "))
-#c = int(input("Enter c class pupils quantity = "))
-#print("Min tables quantity = ", ((a+b+c)//2)+1)
+# a = int(input("Enter a class pupils quantity = "))
+# b = int(input("Enter b class pupils quantity = "))
+# c = int(input("Enter c class pupils quantity = "))
+# print("Min tables quantity = ", ((a+b+c)//2)+1)
 
 #i = int(input("Enter i = "))
 #j = int(input("Enter j = "))
@@ -72,3 +72,14 @@
 # b = input("Введите второе число: ")
 
 # print(a, "+" , b, "=", a+b)
+
+#Создание списка:
+
+# n = int(input("Enter length: "))
+# user_list = []
+# i = 0
+# while i < n:
+#     string = "Enter element # " + str(i + 1) + " : "
+#     user_list.append(input(string))
+#     i += 1
+# print(user_list)
