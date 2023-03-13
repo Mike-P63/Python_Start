@@ -30,7 +30,7 @@
 #     x = n%10
 #     summa += x
 #     n = n//10
-# print("Сумма чисел в числе = ", summa)    
+# print("Сумма чисел в числе = ", summa)
 
 
 #s = int(input("Введите общее количество сделанных детьми журавликов: "))
@@ -185,21 +185,84 @@
 # Input: 5 -> 5 1 6 5 9
 # Output: 1 9
 
- 
-
-# for i in range(int(input("Введите количество арбузов для выбора: "))):
-#     x = list(map(int, input("Масса арбуза: ").split()))
-# max_number = max(x)
-# min_number = min(x)
-# print(max_number, min_number)
 
 
-n = int(input("Введите количество арбузов для выбора: ")) 
+# n = int(input("Введите количество арбузов для выбора: "))
 
-melons_mas = []
-i = 0
-while i < n:
-    string = "Ввведите массу арбуза: " + str(i+1) + ": "
-    melons_mas.append(input(string))
-    i+=1
-print("Для тещи - ", min(melons_mas), "кг", "Для Ивана Васильевича - ", max(melons_mas), "кг")
+# melons_mas = []
+# i = 0
+# while i < n:
+#     string = "Ввведите массу арбуза: " + str(i+1) + ": "
+#     melons_mas.append(input(string))
+#     i+=1
+# print("Для тещи - ", min(melons_mas), "кг", "Для Ивана Васильевича - ", max(melons_mas), "кг")
+
+
+
+# n = int(input("Введите количество арбузов для выбора: "))
+# min = 100
+# max = 0
+# i = 0
+# while i < n:
+#     melon = int(input("Ввведите массу арбуза: "))
+#     if melon < min:
+#        min = melon
+#        i+=1
+#     elif melon > max:
+#        max = melon
+#        i+=1
+# print("Для тещи - ", min, "кг", "Для Ивана Васильевича - ", max, "кг")
+
+
+
+# ЗАДАЧА 10 МОНЕТКИ
+
+# n = int(input("Введите общее количество монеток: "))
+# result = 0
+# for i in range(n):
+#     coin = int(input("Введите значение монетки: (Орел(1) или решка(0)?) " + str(i+1) + ": "))
+#     if coin == 1:
+#         result += 1
+# print("Минимальное количество монеток, которые нужно перевернуть: ", result if result < n/2 else n-result)
+# print()
+
+#Либо:
+
+# n = int(input('Введите общее количество монет: '))
+# orel = 0
+# reshka = 0
+# for i in range(n):
+#     coin = int(input("Введите значение монетки: Орел(1) или решка(0)? " + str(i+1) + ": " ))
+#     if coin == 1:
+#         orel += 1
+#     else:
+#         reshka += 1
+# if orel < reshka:
+#     print(f'Переверните {orel} монет с орла на решку')
+# elif orel == reshka:
+#     print('Количество орлов и решек одинаково')
+# else:
+#     print((f'Переверните {reshka} монет с решки на орла'))
+
+
+# Задача 12 Петя и Катя
+
+s=int(input("Введите число суммы чисел: "))
+p=int(input("Введите число произведения чисел: "))
+for x in range (1,1000):
+    for y in range (1,1000):
+        if x+y == s and x*y == p:
+            print(x,y)
+
+
+
+
+# Задача 14
+
+# n=int(input("Введите число: "))
+# p=1
+# while p <= n:
+#     if p*2>n:
+#         break
+#     else: p=p*2
+#     print(p,end=' ')
