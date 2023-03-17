@@ -13,14 +13,34 @@
 
 
 
+n = abs(int(input('Введите количество элементов списка : ')))
+Spisok = list(map(int,input("Введите через пробел элементы списка: ").split()))
+if len(Spisok) != n or n == 0:
+    print(f'Количество элементов не соответствует {n}')
+else:
+    x = int(input('Введите число X, с которым необходимо сравнивать элементы списка: '))
+    min = abs(x - Spisok[0])
+    index = 0
+    for i in range(1, n):
+        count = abs(x - Spisok[i])
+        if count < min:
+            min = count
+            index = i
+    print(f'Число {Spisok[index]} в списке наиболее близко по величине к числу {x}, их разница составляет {abs(x - Spisok[index])}')
 
-n = int(input("Ввведите проверочное число: "))
-k = 0
-a = map(int, input("Введите числа списка через пробел: ").split())
-a = list(a)
-for i in range(len(a)):
-    if (n - a[i]) < n  and n - a[i] > 0:
-        k=i
-print(f"Самый близкий по величине элемент к заданному числу: {n}", "->", a[k]) 
+
+# Либо:
+
+# n = int(input("Ввведите проверочное число: "))
+# k = 0
+# a = map(int, input("Введите числа списка через пробел: ").split())
+# a = list(a)
+# for i in range(len(a)):
+#     if (n - a[i]) < n  and n - a[i] > 0:
+#         k=i
+# print(f"Самый близкий по величине элемент к заданному числу: {n}", "->", a[k]) 
+
+
+
 
 
