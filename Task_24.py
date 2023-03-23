@@ -12,17 +12,32 @@
 4 -> 1 2 3 4
 9'''
 
-from random import randint
-n = int(input("Введите максимальное количество ягод на кусте: "))
-kust = list(randint(1, n) for i in range(int(input('Введите кол-во кустов: '))))
-print(kust)
-a = int(input('Введите № куста: '))
-res = 0
-if a == 1:
-    res = kust[0] + kust[1] + kust[-1] # если куст первый
-elif a == len(kust):
-    res = kust[-2] + kust[-1] + kust[0]   # если куст последний
-else:
-    res = kust[a-1] + kust[a-2] + kust[a]  # если куст в теле списка с учетом нулевого индекса
-print("Максимально соберем -> ", res, 'ягод')
+# from random import randint
+# n = int(input("Введите максимальное количество ягод на кусте: "))
+# kust = list(randint(1, n) for i in range(int(input('Введите кол-во кустов: '))))
+# print(kust)
+# a = int(input('Введите № куста: '))
+# res = 0
+# if a == 1:
+#     res = kust[0] + kust[1] + kust[-1] # если куст первый
+# elif a == len(kust):
+#     res = kust[-2] + kust[-1] + kust[0]   # если куст последний
+# else:
+#     res = kust[a-1] + kust[a-2] + kust[a]  # если куст в теле списка с учетом нулевого индекса
+# print("Максимально соберем -> ", res, 'ягод')
+
+
+
+
+n = int(input())
+arr = list()
+for i in range(n):
+    x = int(input())
+    arr.append(x)
+
+arr_1 = list()
+for i in range(len(arr) - 1):
+    arr_1.append(arr[i-1] + arr[i]+arr[i+1])
+arr_1.append(arr[-2]+arr[-1]+arr[0])
+print(max(arr_1))
 
