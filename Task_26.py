@@ -10,7 +10,7 @@
 def stepen(a,b):
     if b == 1:
         return a
-    return a**b
+    return a * stepen(a,b-1)  
 
 a = int(input("Введите число a: "))
 b = int(input("Введите число b: "))
