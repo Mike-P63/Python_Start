@@ -10,7 +10,7 @@
 def stepen(a,b):
     if b == 1:
         return a
-    return a * stepen(a,b-1)  
+    return a * stepen(a,b-1)  # Накапливаем произведение числа, хранящегося в переменной a, самого на себя ровно b раз
 
 a = int(input("Введите число a: "))
 b = int(input("Введите число b: "))
