@@ -9,8 +9,7 @@
 def AsumB(a,b):
     if b == 0:
         return a
-    return a+b
-
+    return 1 + AsumB(a,b-1) 
 a = int(input("Введите число а: "))
 b = int(input("Введите число б: "))
 print(AsumB(a,b))
