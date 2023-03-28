@@ -37,13 +37,13 @@ while "*" in my_primer:
     new_el = calc(my_primer[i-1:i+2])
     my_primer[i-1] = new_el
     del my_primer[i:i+2]
-while "+" in my_primer:
-    i = my_primer.index("+")
+while "-" in my_primer:
+    i = my_primer.index("-")
     new_el = calc(my_primer[i-1:i+2])
     my_primer[i-1] = new_el
     del my_primer[i:i+2]
-while "-" in my_primer:
-    i = my_primer.index("-")
+while "+" in my_primer:
+    i = my_primer.index("+")
     new_el = calc(my_primer[i-1:i+2])
     my_primer[i-1] = new_el
     del my_primer[i:i+2]
