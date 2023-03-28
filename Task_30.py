@@ -14,5 +14,5 @@ d = int(input("Введите значение количества элемен
 
 array = []
 for i in range(d):
-    array.append(a+i*2)
+    array.append(a+i*n)
 print(*array)
